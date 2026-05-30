@@ -2,7 +2,7 @@
   "id": "card-counting-blackjack",
   "adapter": "adapter.py",
   "name": "Card Counting Blackjack",
-  "description": "Six-deck blackjack with Hi-Lo counting: size bets from the true count, play Illustrious-18 deviations, and keep running/true counts accurate. Interactive replay on GitHub Pages.",
+  "description": "Six-deck blackjack with Hi-Lo counting: size bets from the true count, play Illustrious-18 deviations, and keep running/true counts accurate. Showcase: https://dirac3011.github.io/card-counting-blackjack/",
 
   "binding_vow": {
     "version": "1.0.0",
