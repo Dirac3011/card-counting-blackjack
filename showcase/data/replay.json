@@ -1,0 +1,2341 @@
+{
+  "run": {
+    "scores": {
+      "mean_reward": 34.99093579735041
+    }
+  },
+  "episodes": [
+    {
+      "id": "sample-ep-1",
+      "seed": 42,
+      "total_reward": 34.99093579735041
+    }
+  ],
+  "replay": {
+    "sample-ep-1": [
+      {
+        "step": 1,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 1000,
+          "table_min": 10,
+          "cards_remaining": 312,
+          "hand_number": 0,
+          "step": 0,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": true,
+          "current_bet": 0,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Episode started \u2014 place a bet.",
+          "ground_truth_running_count": 0,
+          "ground_truth_true_count": 0.0,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=0.0 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": 0.0,
+          "true_count": 0.0
+        },
+        "reward": 1.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "990",
+          "player_hands": "[[7, 11]]",
+          "dealer_upcard": "10",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.34",
+          "agent_running": "0.0",
+          "agent_true": "0.0",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "308",
+          "shoe_remaining": "[10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10, 10, 8, 7, 10, 3, 2, 10, 4, 9, 10, 4, 5, 10, 5, 7, 8, 2, 8, 10]",
+          "outcome": "Player's turn.",
+          "hand_number": "1",
+          "step": "1",
+          "episode_profit": "0.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 2,
+        "observation": {
+          "phase": "player",
+          "bankroll": 990,
+          "table_min": 10,
+          "cards_remaining": 308,
+          "hand_number": 1,
+          "step": 1,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              7,
+              11,
+              10
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 18,
+          "hand_soft": true,
+          "dealer_upcard": 10,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.34,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.3 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -2.0,
+          "true_count": -0.34
+        },
+        "reward": 0.9997662337662337,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "990",
+          "player_hands": "[[7, 11, 10]]",
+          "dealer_upcard": "10",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-3",
+          "ground_truth_true": "-0.51",
+          "agent_running": "-2.0",
+          "agent_true": "-0.34",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "307",
+          "shoe_remaining": "[3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10, 10, 8, 7, 10, 3, 2, 10, 4, 9, 10, 4, 5, 10, 5, 7, 8, 2, 8]",
+          "outcome": "Player's turn.",
+          "hand_number": "1",
+          "step": "2",
+          "episode_profit": "0.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 3,
+        "observation": {
+          "phase": "player",
+          "bankroll": 990,
+          "table_min": 10,
+          "cards_remaining": 307,
+          "hand_number": 1,
+          "step": 2,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              7,
+              11,
+              10
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 18,
+          "hand_soft": false,
+          "dealer_upcard": 10,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -3,
+          "ground_truth_true_count": -0.51,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.5 bet=10 play=stand (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "stand",
+          "running_count": -3.0,
+          "true_count": -0.51
+        },
+        "reward": 0.999814332247557,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "990",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-4",
+          "ground_truth_true": "-0.68",
+          "agent_running": "-3.0",
+          "agent_true": "-0.51",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "stand",
+          "cards_remaining": "307",
+          "shoe_remaining": "[3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10, 10, 8, 7, 10, 3, 2, 10, 4, 9, 10, 4, 5, 10, 5, 7, 8, 2, 8]",
+          "outcome": "Hand 1: loss (-10)",
+          "hand_number": "1",
+          "step": "3",
+          "episode_profit": "-10.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 4,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 990,
+          "table_min": 10,
+          "cards_remaining": 307,
+          "hand_number": 1,
+          "step": 3,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: loss (-10)",
+          "ground_truth_running_count": -4,
+          "ground_truth_true_count": -0.68,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.7 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -4.0,
+          "true_count": -0.68
+        },
+        "reward": 0.9997524429967427,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "980",
+          "player_hands": "[[8, 2]]",
+          "dealer_upcard": "8",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-3",
+          "ground_truth_true": "-0.51",
+          "agent_running": "-4.0",
+          "agent_true": "-0.68",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "303",
+          "shoe_remaining": "[10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10, 10, 8, 7, 10, 3, 2, 10, 4, 9, 10, 4, 5, 10, 5]",
+          "outcome": "Player's turn.",
+          "hand_number": "2",
+          "step": "4",
+          "episode_profit": "-10.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 5,
+        "observation": {
+          "phase": "player",
+          "bankroll": 980,
+          "table_min": 10,
+          "cards_remaining": 303,
+          "hand_number": 2,
+          "step": 4,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              8,
+              2,
+              5,
+              10
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 10,
+          "hand_soft": false,
+          "dealer_upcard": 8,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -3,
+          "ground_truth_true_count": -0.51,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.5 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -3.0,
+          "true_count": -0.51
+        },
+        "reward": 0.9995148514851485,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "980",
+          "player_hands": "[[8, 2, 5]]",
+          "dealer_upcard": "8",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.34",
+          "agent_running": "-3.0",
+          "agent_true": "-0.51",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "302",
+          "shoe_remaining": "[10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10, 10, 8, 7, 10, 3, 2, 10, 4, 9, 10, 4, 5, 10]",
+          "outcome": "Player's turn.",
+          "hand_number": "2",
+          "step": "5",
+          "episode_profit": "-10.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 6,
+        "observation": {
+          "phase": "player",
+          "bankroll": 980,
+          "table_min": 10,
+          "cards_remaining": 302,
+          "hand_number": 2,
+          "step": 5,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              8,
+              2,
+              5,
+              10
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 15,
+          "hand_soft": false,
+          "dealer_upcard": 8,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.34,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.3 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -2.0,
+          "true_count": -0.34
+        },
+        "reward": 0.9995629139072848,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "980",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.35",
+          "agent_running": "-2.0",
+          "agent_true": "-0.34",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "300",
+          "shoe_remaining": "[7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10, 10, 8, 7, 10, 3, 2, 10, 4, 9, 10, 4]",
+          "outcome": "Hand 1: bust (-10)",
+          "hand_number": "2",
+          "step": "6",
+          "episode_profit": "-20.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 7,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 980,
+          "table_min": 10,
+          "cards_remaining": 300,
+          "hand_number": 2,
+          "step": 6,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: bust (-10)",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.35,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.3 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -2.0,
+          "true_count": -0.35
+        },
+        "reward": 0.9996666666666667,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "970",
+          "player_hands": "[[4, 10]]",
+          "dealer_upcard": "9",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.35",
+          "agent_running": "-2.0",
+          "agent_true": "-0.35",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "296",
+          "shoe_remaining": "[5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10, 10, 8, 7, 10, 3, 2, 10]",
+          "outcome": "Player's turn.",
+          "hand_number": "3",
+          "step": "7",
+          "episode_profit": "-20.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 8,
+        "observation": {
+          "phase": "player",
+          "bankroll": 970,
+          "table_min": 10,
+          "cards_remaining": 296,
+          "hand_number": 3,
+          "step": 7,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              4,
+              10,
+              10
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 14,
+          "hand_soft": false,
+          "dealer_upcard": 9,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.35,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.3 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -2.0,
+          "true_count": -0.35
+        },
+        "reward": 0.9998648648648649,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "970",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "0",
+          "ground_truth_true": "0.0",
+          "agent_running": "-2.0",
+          "agent_true": "-0.35",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "293",
+          "shoe_remaining": "[8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10, 10, 8, 7, 10]",
+          "outcome": "Hand 1: bust (-10)",
+          "hand_number": "3",
+          "step": "8",
+          "episode_profit": "-30.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 9,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 970,
+          "table_min": 10,
+          "cards_remaining": 293,
+          "hand_number": 3,
+          "step": 8,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: bust (-10)",
+          "ground_truth_running_count": 0,
+          "ground_truth_true_count": 0.0,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=0.0 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": 0.0,
+          "true_count": 0.0
+        },
+        "reward": 1.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "960",
+          "player_hands": "[[10, 7]]",
+          "dealer_upcard": "8",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.18",
+          "agent_running": "0.0",
+          "agent_true": "0.0",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "289",
+          "shoe_remaining": "[5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10]",
+          "outcome": "Player's turn.",
+          "hand_number": "4",
+          "step": "9",
+          "episode_profit": "-30.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 10,
+        "observation": {
+          "phase": "player",
+          "bankroll": 960,
+          "table_min": 10,
+          "cards_remaining": 289,
+          "hand_number": 4,
+          "step": 9,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              10,
+              7
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 17,
+          "hand_soft": false,
+          "dealer_upcard": 8,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -1,
+          "ground_truth_true_count": -0.18,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.2 bet=10 play=stand (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "stand",
+          "running_count": -1.0,
+          "true_count": -0.18
+        },
+        "reward": 0.9999930795847751,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "960",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.36",
+          "agent_running": "-1.0",
+          "agent_true": "-0.18",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "stand",
+          "cards_remaining": "289",
+          "shoe_remaining": "[5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4, 5, 5, 11, 10]",
+          "outcome": "Hand 1: loss (-10)",
+          "hand_number": "4",
+          "step": "10",
+          "episode_profit": "-40.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 11,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 960,
+          "table_min": 10,
+          "cards_remaining": 289,
+          "hand_number": 4,
+          "step": 10,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: loss (-10)",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.36,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.4 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -2.0,
+          "true_count": -0.36
+        },
+        "reward": 0.9999861591695501,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "975",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.36",
+          "agent_running": "-2.0",
+          "agent_true": "-0.36",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "285",
+          "shoe_remaining": "[5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8, 3, 9, 7, 4]",
+          "outcome": "Player blackjack \u2014 pays 3:2.",
+          "hand_number": "5",
+          "step": "11",
+          "episode_profit": "-40.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 12,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 285,
+          "hand_number": 5,
+          "step": 11,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Player blackjack \u2014 pays 3:2.",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.36,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.4 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -2.0,
+          "true_count": -0.36
+        },
+        "reward": 0.9995087719298246,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "965",
+          "player_hands": "[[4, 7]]",
+          "dealer_upcard": "9",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.19",
+          "agent_running": "-2.0",
+          "agent_true": "-0.36",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "281",
+          "shoe_remaining": "[10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5, 8]",
+          "outcome": "Player's turn.",
+          "hand_number": "6",
+          "step": "12",
+          "episode_profit": "-40.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 13,
+        "observation": {
+          "phase": "player",
+          "bankroll": 965,
+          "table_min": 10,
+          "cards_remaining": 281,
+          "hand_number": 6,
+          "step": 12,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              4,
+              7,
+              8
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 11,
+          "hand_soft": false,
+          "dealer_upcard": 9,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -1,
+          "ground_truth_true_count": -0.19,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.2 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -1.0,
+          "true_count": -0.19
+        },
+        "reward": 0.9995053380782918,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "965",
+          "player_hands": "[[4, 7, 8]]",
+          "dealer_upcard": "9",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.19",
+          "agent_running": "-1.0",
+          "agent_true": "-0.19",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "280",
+          "shoe_remaining": "[7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8, 5]",
+          "outcome": "Player's turn.",
+          "hand_number": "6",
+          "step": "13",
+          "episode_profit": "-40.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 14,
+        "observation": {
+          "phase": "player",
+          "bankroll": 965,
+          "table_min": 10,
+          "cards_remaining": 280,
+          "hand_number": 6,
+          "step": 13,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              4,
+              7,
+              8
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 19,
+          "hand_soft": false,
+          "dealer_upcard": 9,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -1,
+          "ground_truth_true_count": -0.19,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.2 bet=10 play=stand (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "stand",
+          "running_count": -1.0,
+          "true_count": -0.19
+        },
+        "reward": 0.9995714285714286,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "985",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "1",
+          "ground_truth_true": "0.19",
+          "agent_running": "-1.0",
+          "agent_true": "-0.19",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "stand",
+          "cards_remaining": "279",
+          "shoe_remaining": "[11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3, 10, 11, 11, 8]",
+          "outcome": "Hand 1: win (+10)",
+          "hand_number": "6",
+          "step": "14",
+          "episode_profit": "-30.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 15,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 985,
+          "table_min": 10,
+          "cards_remaining": 279,
+          "hand_number": 6,
+          "step": 14,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: win (+10)",
+          "ground_truth_running_count": 1,
+          "ground_truth_true_count": 0.19,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=0.2 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": 1.0,
+          "true_count": 0.19
+        },
+        "reward": 0.9996379928315412,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "insurance",
+          "bankroll": "975",
+          "player_hands": "[[8, 11]]",
+          "dealer_upcard": "11",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.19",
+          "agent_running": "1.0",
+          "agent_true": "0.19",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "275",
+          "shoe_remaining": "[6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3]",
+          "outcome": "Dealer shows Ace \u2014 insurance?",
+          "hand_number": "7",
+          "step": "15",
+          "episode_profit": "-30.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 16,
+        "observation": {
+          "phase": "insurance",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 275,
+          "hand_number": 7,
+          "step": 15,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              8,
+              11
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": 11,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": true,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "insurance",
+            "none"
+          ],
+          "message": "Dealer shows Ace \u2014 insurance?",
+          "ground_truth_running_count": -1,
+          "ground_truth_true_count": -0.19,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.2 bet=0 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 0,
+          "action": "none",
+          "running_count": -1.0,
+          "true_count": -0.19
+        },
+        "reward": 0.9999090909090909,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "975",
+          "player_hands": "[[8, 11]]",
+          "dealer_upcard": "11",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.19",
+          "agent_running": "-1.0",
+          "agent_true": "-0.19",
+          "optimal_bet": "10",
+          "chosen_bet": "0",
+          "optimal_action": "none",
+          "cards_remaining": "275",
+          "shoe_remaining": "[6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3]",
+          "outcome": "Dealer shows Ace \u2014 insurance?",
+          "hand_number": "7",
+          "step": "16",
+          "episode_profit": "-30.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 17,
+        "observation": {
+          "phase": "player",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 275,
+          "hand_number": 7,
+          "step": 16,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              8,
+              11
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 19,
+          "hand_soft": true,
+          "dealer_upcard": 11,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": true,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Dealer shows Ace \u2014 insurance?",
+          "ground_truth_running_count": -1,
+          "ground_truth_true_count": -0.19,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.2 bet=10 play=stand (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "stand",
+          "running_count": -1.0,
+          "true_count": -0.19
+        },
+        "reward": 0.9999090909090909,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "975",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.38",
+          "agent_running": "-1.0",
+          "agent_true": "-0.19",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "stand",
+          "cards_remaining": "275",
+          "shoe_remaining": "[6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3, 10, 7, 9, 3]",
+          "outcome": "Hand 1: loss (-10)",
+          "hand_number": "7",
+          "step": "17",
+          "episode_profit": "-40.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 18,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 275,
+          "hand_number": 7,
+          "step": 17,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: loss (-10)",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.38,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.4 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -2.0,
+          "true_count": -0.38
+        },
+        "reward": 0.9998181818181818,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "965",
+          "player_hands": "[[3, 9]]",
+          "dealer_upcard": "7",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.19",
+          "agent_running": "-2.0",
+          "agent_true": "-0.38",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "271",
+          "shoe_remaining": "[8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10, 3]",
+          "outcome": "Player's turn.",
+          "hand_number": "8",
+          "step": "18",
+          "episode_profit": "-40.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 19,
+        "observation": {
+          "phase": "player",
+          "bankroll": 965,
+          "table_min": 10,
+          "cards_remaining": 271,
+          "hand_number": 8,
+          "step": 18,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              3,
+              9,
+              3,
+              10
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 12,
+          "hand_soft": false,
+          "dealer_upcard": 7,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -1,
+          "ground_truth_true_count": -0.19,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.2 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -1.0,
+          "true_count": -0.19
+        },
+        "reward": 0.9998118081180812,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "965",
+          "player_hands": "[[3, 9, 3]]",
+          "dealer_upcard": "7",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "0",
+          "ground_truth_true": "0.0",
+          "agent_running": "-1.0",
+          "agent_true": "-0.19",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "270",
+          "shoe_remaining": "[6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10, 10]",
+          "outcome": "Player's turn.",
+          "hand_number": "8",
+          "step": "19",
+          "episode_profit": "-40.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 20,
+        "observation": {
+          "phase": "player",
+          "bankroll": 965,
+          "table_min": 10,
+          "cards_remaining": 270,
+          "hand_number": 8,
+          "step": 19,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              3,
+              9,
+              3,
+              10
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 15,
+          "hand_soft": false,
+          "dealer_upcard": 7,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": 0,
+          "ground_truth_true_count": 0.0,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=0.0 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": 0.0,
+          "true_count": 0.0
+        },
+        "reward": 1.0,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "965",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.39",
+          "agent_running": "0.0",
+          "agent_true": "0.0",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "269",
+          "shoe_remaining": "[9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9, 5, 9, 3, 10]",
+          "outcome": "Hand 1: bust (-10)",
+          "hand_number": "8",
+          "step": "20",
+          "episode_profit": "-50.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 21,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 965,
+          "table_min": 10,
+          "cards_remaining": 269,
+          "hand_number": 8,
+          "step": 20,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: bust (-10)",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.39,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.4 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -2.0,
+          "true_count": -0.39
+        },
+        "reward": 0.9996617100371747,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "955",
+          "player_hands": "[[10, 3]]",
+          "dealer_upcard": "9",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.39",
+          "agent_running": "-2.0",
+          "agent_true": "-0.39",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "265",
+          "shoe_remaining": "[8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10, 10, 9]",
+          "outcome": "Player's turn.",
+          "hand_number": "9",
+          "step": "21",
+          "episode_profit": "-50.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 22,
+        "observation": {
+          "phase": "player",
+          "bankroll": 955,
+          "table_min": 10,
+          "cards_remaining": 265,
+          "hand_number": 9,
+          "step": 21,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              10,
+              3,
+              9
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 13,
+          "hand_soft": false,
+          "dealer_upcard": 9,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.39,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.4 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -2.0,
+          "true_count": -0.39
+        },
+        "reward": 0.999754716981132,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "955",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-2",
+          "ground_truth_true": "-0.4",
+          "agent_running": "-2.0",
+          "agent_true": "-0.39",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "263",
+          "shoe_remaining": "[9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10, 9, 7, 11, 10]",
+          "outcome": "Hand 1: bust (-10)",
+          "hand_number": "9",
+          "step": "22",
+          "episode_profit": "-60.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 23,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 955,
+          "table_min": 10,
+          "cards_remaining": 263,
+          "hand_number": 9,
+          "step": 22,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: bust (-10)",
+          "ground_truth_running_count": -2,
+          "ground_truth_true_count": -0.4,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.4 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -2.0,
+          "true_count": -0.4
+        },
+        "reward": 0.9995437262357414,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "970",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-4",
+          "ground_truth_true": "-0.8",
+          "agent_running": "-2.0",
+          "agent_true": "-0.4",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "259",
+          "shoe_remaining": "[8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3, 10, 5, 11, 10]",
+          "outcome": "Player blackjack \u2014 pays 3:2.",
+          "hand_number": "10",
+          "step": "23",
+          "episode_profit": "-60.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 24,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 970,
+          "table_min": 10,
+          "cards_remaining": 259,
+          "hand_number": 10,
+          "step": 23,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Player blackjack \u2014 pays 3:2.",
+          "ground_truth_running_count": -4,
+          "ground_truth_true_count": -0.8,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.8 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -4.0,
+          "true_count": -0.8
+        },
+        "reward": 0.9996911196911197,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "985",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-6",
+          "ground_truth_true": "-1.22",
+          "agent_running": "-4.0",
+          "agent_true": "-0.8",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "255",
+          "shoe_remaining": "[4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4, 4, 7, 8, 3]",
+          "outcome": "Player blackjack \u2014 pays 3:2.",
+          "hand_number": "11",
+          "step": "24",
+          "episode_profit": "-60.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 25,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 985,
+          "table_min": 10,
+          "cards_remaining": 255,
+          "hand_number": 11,
+          "step": 24,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Player blackjack \u2014 pays 3:2.",
+          "ground_truth_running_count": -6,
+          "ground_truth_true_count": -1.22,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-1.2 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -6.0,
+          "true_count": -1.22
+        },
+        "reward": 0.9996470588235294,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "975",
+          "player_hands": "[[3, 8]]",
+          "dealer_upcard": "7",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-5",
+          "ground_truth_true": "-1.04",
+          "agent_running": "-6.0",
+          "agent_true": "-1.22",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "251",
+          "shoe_remaining": "[4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5, 4]",
+          "outcome": "Player's turn.",
+          "hand_number": "12",
+          "step": "25",
+          "episode_profit": "-60.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 26,
+        "observation": {
+          "phase": "player",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 251,
+          "hand_number": 12,
+          "step": 25,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              3,
+              8,
+              4,
+              5
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 11,
+          "hand_soft": false,
+          "dealer_upcard": 7,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -5,
+          "ground_truth_true_count": -1.04,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-1.0 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -5.0,
+          "true_count": -1.04
+        },
+        "reward": 0.999585657370518,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "975",
+          "player_hands": "[[3, 8, 4]]",
+          "dealer_upcard": "7",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-4",
+          "ground_truth_true": "-0.83",
+          "agent_running": "-5.0",
+          "agent_true": "-1.04",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "250",
+          "shoe_remaining": "[4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11, 5]",
+          "outcome": "Player's turn.",
+          "hand_number": "12",
+          "step": "26",
+          "episode_profit": "-60.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 27,
+        "observation": {
+          "phase": "player",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 250,
+          "hand_number": 12,
+          "step": 26,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              3,
+              8,
+              4,
+              5
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 15,
+          "hand_soft": false,
+          "dealer_upcard": 7,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -4,
+          "ground_truth_true_count": -0.83,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.8 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -4.0,
+          "true_count": -0.83
+        },
+        "reward": 0.9998,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "975",
+          "player_hands": "[[3, 8, 4, 5]]",
+          "dealer_upcard": "7",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-3",
+          "ground_truth_true": "-0.63",
+          "agent_running": "-4.0",
+          "agent_true": "-0.83",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "249",
+          "shoe_remaining": "[3, 4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5, 4, 3, 11]",
+          "outcome": "Player's turn.",
+          "hand_number": "12",
+          "step": "27",
+          "episode_profit": "-60.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 28,
+        "observation": {
+          "phase": "player",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 249,
+          "hand_number": 12,
+          "step": 27,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              3,
+              8,
+              4,
+              5
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 20,
+          "hand_soft": false,
+          "dealer_upcard": 7,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -3,
+          "ground_truth_true_count": -0.63,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.6 bet=10 play=stand (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "stand",
+          "running_count": -3.0,
+          "true_count": -0.63
+        },
+        "reward": 0.9996506024096385,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "995",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.21",
+          "agent_running": "-3.0",
+          "agent_true": "-0.63",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "stand",
+          "cards_remaining": "246",
+          "shoe_remaining": "[10, 5, 4, 3, 4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10, 10, 7, 10, 5]",
+          "outcome": "Hand 1: win (+10)",
+          "hand_number": "12",
+          "step": "28",
+          "episode_profit": "-50.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 29,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 995,
+          "table_min": 10,
+          "cards_remaining": 246,
+          "hand_number": 12,
+          "step": 28,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: win (+10)",
+          "ground_truth_running_count": -1,
+          "ground_truth_true_count": -0.21,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.2 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -1.0,
+          "true_count": -0.21
+        },
+        "reward": 0.9998617886178862,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "985",
+          "player_hands": "[[5, 10]]",
+          "dealer_upcard": "7",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.21",
+          "agent_running": "-1.0",
+          "agent_true": "-0.21",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "242",
+          "shoe_remaining": "[2, 10, 8, 10, 10, 5, 4, 3, 4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7, 10]",
+          "outcome": "Player's turn.",
+          "hand_number": "13",
+          "step": "29",
+          "episode_profit": "-50.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 30,
+        "observation": {
+          "phase": "player",
+          "bankroll": 985,
+          "table_min": 10,
+          "cards_remaining": 242,
+          "hand_number": 13,
+          "step": 29,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              5,
+              10,
+              10
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 15,
+          "hand_soft": false,
+          "dealer_upcard": 7,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -1,
+          "ground_truth_true_count": -0.21,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.2 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -1.0,
+          "true_count": -0.21
+        },
+        "reward": 0.9995123966942149,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "985",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-3",
+          "ground_truth_true": "-0.65",
+          "agent_running": "-1.0",
+          "agent_true": "-0.21",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "241",
+          "shoe_remaining": "[10, 2, 10, 8, 10, 10, 5, 4, 3, 4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8, 6, 8, 11, 7]",
+          "outcome": "Hand 1: bust (-10)",
+          "hand_number": "13",
+          "step": "30",
+          "episode_profit": "-60.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 31,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 985,
+          "table_min": 10,
+          "cards_remaining": 241,
+          "hand_number": 13,
+          "step": 30,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: bust (-10)",
+          "ground_truth_running_count": -3,
+          "ground_truth_true_count": -0.65,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.7 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -3.0,
+          "true_count": -0.65
+        },
+        "reward": 0.9997302904564316,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "975",
+          "player_hands": "[[7, 11]]",
+          "dealer_upcard": "8",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-4",
+          "ground_truth_true": "-0.88",
+          "agent_running": "-3.0",
+          "agent_true": "-0.65",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "237",
+          "shoe_remaining": "[10, 10, 5, 4, 10, 2, 10, 8, 10, 10, 5, 4, 3, 4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6, 8]",
+          "outcome": "Player's turn.",
+          "hand_number": "14",
+          "step": "31",
+          "episode_profit": "-60.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 32,
+        "observation": {
+          "phase": "player",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 237,
+          "hand_number": 14,
+          "step": 31,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              7,
+              11,
+              8,
+              6
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 18,
+          "hand_soft": true,
+          "dealer_upcard": 8,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -4,
+          "ground_truth_true_count": -0.88,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.9 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -4.0,
+          "true_count": -0.88
+        },
+        "reward": 0.9997637130801688,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "975",
+          "player_hands": "[[7, 11, 8]]",
+          "dealer_upcard": "8",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-4",
+          "ground_truth_true": "-0.88",
+          "agent_running": "-4.0",
+          "agent_true": "-0.88",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "236",
+          "shoe_remaining": "[2, 10, 10, 5, 4, 10, 2, 10, 8, 10, 10, 5, 4, 3, 4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5, 10, 6]",
+          "outcome": "Player's turn.",
+          "hand_number": "14",
+          "step": "32",
+          "episode_profit": "-60.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 33,
+        "observation": {
+          "phase": "player",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 236,
+          "hand_number": 14,
+          "step": 32,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              7,
+              11,
+              8,
+              6
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 16,
+          "hand_soft": false,
+          "dealer_upcard": 8,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -4,
+          "ground_truth_true_count": -0.88,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.9 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -4.0,
+          "true_count": -0.88
+        },
+        "reward": 0.999864406779661,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "bet",
+          "bankroll": "975",
+          "player_hands": "[[]]",
+          "dealer_upcard": "",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "false",
+          "ground_truth_running": "-3",
+          "ground_truth_true": "-0.67",
+          "agent_running": "-4.0",
+          "agent_true": "-0.88",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "234",
+          "shoe_remaining": "[7, 9, 2, 10, 10, 5, 4, 10, 2, 10, 8, 10, 10, 5, 4, 3, 4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9, 6, 8, 3, 5]",
+          "outcome": "Hand 1: bust (-10)",
+          "hand_number": "14",
+          "step": "33",
+          "episode_profit": "-70.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 34,
+        "observation": {
+          "phase": "bet",
+          "bankroll": 975,
+          "table_min": 10,
+          "cards_remaining": 234,
+          "hand_number": 14,
+          "step": 33,
+          "max_steps": 35,
+          "player_hands": [
+            []
+          ],
+          "active_hand": 0,
+          "hand_total": 0,
+          "hand_soft": false,
+          "dealer_upcard": null,
+          "dealer_hole_hidden": false,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": false,
+          "can_split": false,
+          "valid_actions": [
+            "none"
+          ],
+          "message": "Hand 1: bust (-10)",
+          "ground_truth_running_count": -3,
+          "ground_truth_true_count": -0.67,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.7 bet=10 play=none (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "none",
+          "running_count": -3.0,
+          "true_count": -0.67
+        },
+        "reward": 0.9996666666666667,
+        "terminated": false,
+        "truncated": false,
+        "info": {
+          "phase": "player",
+          "bankroll": "965",
+          "player_hands": "[[5, 3]]",
+          "dealer_upcard": "8",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.23",
+          "agent_running": "-3.0",
+          "agent_true": "-0.67",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "none",
+          "cards_remaining": "230",
+          "shoe_remaining": "[10, 7, 8, 10, 7, 9, 2, 10, 10, 5, 4, 10, 2, 10, 8, 10, 10, 5, 4, 3, 4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2, 9]",
+          "outcome": "Player's turn.",
+          "hand_number": "15",
+          "step": "34",
+          "episode_profit": "-70.0",
+          "profitable": "false"
+        }
+      },
+      {
+        "step": 35,
+        "observation": {
+          "phase": "player",
+          "bankroll": 965,
+          "table_min": 10,
+          "cards_remaining": 230,
+          "hand_number": 15,
+          "step": 34,
+          "max_steps": 35,
+          "player_hands": [
+            [
+              5,
+              3,
+              9
+            ]
+          ],
+          "active_hand": 0,
+          "hand_total": 8,
+          "hand_soft": false,
+          "dealer_upcard": 8,
+          "dealer_hole_hidden": true,
+          "current_bet": 10,
+          "insurance_offered": false,
+          "can_double": true,
+          "can_split": false,
+          "valid_actions": [
+            "hit",
+            "stand",
+            "double"
+          ],
+          "message": "Player's turn.",
+          "ground_truth_running_count": -1,
+          "ground_truth_true_count": -0.23,
+          "optimal_bet_hint": 10
+        },
+        "reasoning": "TC=-0.2 bet=10 play=hit (optimal bet 10)",
+        "action": {
+          "bet_size": 10,
+          "action": "hit",
+          "running_count": -1.0,
+          "true_count": -0.23
+        },
+        "reward": 0.9996086956521739,
+        "terminated": false,
+        "truncated": true,
+        "info": {
+          "phase": "player",
+          "bankroll": "965",
+          "player_hands": "[[5, 3, 9]]",
+          "dealer_upcard": "8",
+          "dealer_hole": "hidden",
+          "dealer_hole_hidden": "true",
+          "ground_truth_running": "-1",
+          "ground_truth_true": "-0.23",
+          "agent_running": "-1.0",
+          "agent_true": "-0.23",
+          "optimal_bet": "10",
+          "chosen_bet": "10",
+          "optimal_action": "hit",
+          "cards_remaining": "229",
+          "shoe_remaining": "[6, 10, 7, 8, 10, 7, 9, 2, 10, 10, 5, 4, 10, 2, 10, 8, 10, 10, 5, 4, 3, 4, 4, 3, 10, 10, 4, 10, 10, 4, 8, 3, 5, 3, 9, 7, 8, 6, 10, 2]",
+          "outcome": "Player's turn. Step cap (35).",
+          "hand_number": "15",
+          "step": "35",
+          "episode_profit": "-70.0",
+          "profitable": "false"
+        }
+      }
+    ]
+  }
+}

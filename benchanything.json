@@ -1,0 +1,62 @@
+{
+  "id": "card-counting-blackjack",
+  "adapter": "adapter.py",
+  "name": "Card Counting Blackjack",
+  "description": "Six-deck blackjack with Hi-Lo counting: size bets from the true count, play Illustrious-18 deviations, and keep running/true counts accurate. Interactive replay on GitHub Pages.",
+
+  "binding_vow": {
+    "version": "1.0.0",
+    "tier": "tier1",
+    "description": "You are a card counter at a 6-deck shoe table (75% penetration reshuffle). Dealer stands on soft 17; blackjack pays 3:2; double on first two cards only; splits allowed; insurance vs Ace. Each step submit JSON with bet_size, action (hit/stand/double/split/insurance/none), running_count, and true_count. Maximize bankroll over up to 35 decisions using Hi-Lo (+1 for 2-6, 0 for 7-9, -1 for 10-A) and bet Table Min × max(1, floor(true count)) when TC ≥ 1.",
+
+    "observation_space": {
+      "type": "json",
+      "description": "{ phase, bankroll, table_min, cards_remaining, player_hands, dealer_upcard, dealer_hole_hidden, ground_truth_running_count, ground_truth_true_count, optimal_bet_hint, valid_actions, message }"
+    },
+
+    "action_space": {
+      "type": "json",
+      "description": "{ bet_size: int, action: hit|stand|double|split|insurance|none, running_count: number, true_count: number }"
+    },
+
+    "reward": {
+      "type": "scalar",
+      "range": { "low": -8.0, "high": 6.0 },
+      "description": "Bet sizing match + strategy (+1 optimal, -0.5 suboptimal, -5 illegal) + count drift penalties"
+    },
+
+    "episode": {
+      "max_steps": 35,
+      "deterministic_reset": true,
+      "supports_seed": true,
+      "parallel_episodes": 1,
+      "observability": "full"
+    },
+
+    "techniques": []
+  },
+
+  "scoring": {
+    "primary_metric": "mean_reward",
+    "higher_is_better": true,
+    "metrics": [
+      {
+        "name": "mean_reward",
+        "type": "episode_reward",
+        "aggregation": "mean"
+      },
+      {
+        "name": "final_bankroll",
+        "type": "terminal_field",
+        "field": "bankroll",
+        "aggregation": "mean"
+      },
+      {
+        "name": "profitable_episodes",
+        "type": "terminal_field",
+        "field": "profitable",
+        "aggregation": "pass_rate"
+      }
+    ]
+  }
+}
